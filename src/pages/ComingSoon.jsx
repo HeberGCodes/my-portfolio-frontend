@@ -1,4 +1,4 @@
-import { FaGithub, FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin, FaGithub, FaXTwitter } from "react-icons/fa6";
 
 export default function ComingSoon() {
   return (
@@ -31,6 +31,14 @@ export default function ComingSoon() {
 
       {/* Social Links */}
       <div className="flex gap-6 text-3xl">
+        <a
+            href="https://www.linkedin.com/in/heber-gc/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-teal-300 hover:text-amber-200 transition transform hover:scale-110"
+        >
+            <FaLinkedin />
+        </a>
         <a
           href="https://github.com/HeberGCodes"
           target="_blank"
