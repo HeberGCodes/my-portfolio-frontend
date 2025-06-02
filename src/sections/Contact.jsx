@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
-      <div className="min-h-screen bg-gray-100 text-gray-800 px-4 py-16">
-        <h2 className="text-4xl font-bold text-center mb-8">Contact</h2>
+      <div className="min-h-screen bg-gray-100 text-gray-800 px-4 pt-24 pb-12">
+        <h2 className="text-6xl font-bold text-center mb-12">Contact</h2>
         <form className="max-w-xl mx-auto space-y-4">
           <input
             type="text"
