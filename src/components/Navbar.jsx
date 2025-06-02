@@ -30,7 +30,7 @@ export default function Navbar() {
               to={to} // Scroll to the section with this ID
               spy={true} // Watch the scroll position and set the active class when in view
               smooth={true} // Smooth scrolling
-              offset={-50} // Offset for fixed navbar height so the section is not hidden behind the navbar
+              offset={0} // Offset for fixed navbar height so the section is not hidden behind the navbar
               duration={500} // Duration of the scroll animation
               className="text-teal-300 hover:text-amber-200 transition transform hover:scale-110 cursor-pointer"
             >
