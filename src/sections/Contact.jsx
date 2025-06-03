@@ -25,7 +25,7 @@ export default function Contact() {
           className="flex flex-col items-center justify-center text-center p-8 rounded-lg shadow-lg hover:shadow-2xl transition bg-zinc-800 h-full"
         >
           <FaEnvelope className="text-amber-400 text-6xl mb-2" />
-          <h3 className="text-zinc-100 text-2xl font-semibold mb-2">{copied ? "Copied!" : "Copy my email"}</h3>
+          <h3 className="text-zinc-100 text-2xl mb-2">{copied ? "Copied!" : "Copy email"}</h3>
         </button>
 
         {/* LinkedIn Card */}
@@ -36,7 +36,7 @@ export default function Contact() {
           className="flex flex-col items-center justify-center text-center p-8 rounded-lg shadow-lg hover:shadow-2xl transition bg-zinc-800 h-full"
         >
           <FaLinkedin className="text-amber-400 text-6xl mb-2" />
-          <h3 className="text-zinc-100 text-2xl font-semibold mb-2">Send me a message</h3>
+          <h3 className="text-zinc-100 text-2xl mb-2">Send message</h3>
         </a>
       </div>
     </div>
