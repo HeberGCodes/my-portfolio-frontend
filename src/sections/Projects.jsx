@@ -19,9 +19,9 @@ export default function Projects() {
   ];;
 
     return (
-      <div className="min-h-screen bg-white text-gray-900 px-4 pt-24 pb-12">
+      <div className="min-h-screen bg-zinc-200 text-gray-900 px-4 pt-24 pb-12">
         <h2 className="text-6xl font-bold text-center mb-12">Projects</h2>
-        <div className="grid gap-8 max-w-5xl mx-auto md:grid-cols-2">
+        <div className="grid gap-8 max-w-4xl mx-auto md:grid-cols-2">
           {projects.map(({ title, description, url }) => (
           <a
             key={title}                   // unique key
