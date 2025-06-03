@@ -1,31 +1,44 @@
+import { useState } from "react";
+import { FaEnvelope, FaLinkedin } from "react-icons/fa";
+
 export default function Contact() {
-    return (
-      <div className="min-h-screen bg-gray-100 text-gray-800 px-4 pt-24 pb-12">
-        <h2 className="text-6xl font-bold text-center mb-12">Contact</h2>
-        <form className="max-w-xl mx-auto space-y-4">
-          <input
-            type="text"
-            placeholder="Name"
-            className="w-full p-3 border rounded-lg"
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            className="w-full p-3 border rounded-lg"
-          />
-          <textarea
-            rows="5"
-            placeholder="Message"
-            className="w-full p-3 border rounded-lg"
-          ></textarea>
-          <button
-            type="submit"
-            className="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-500 transition"
-          >
-            Send Message
-          </button>
-        </form>
+  const email = "hebergcodes@gmail.com";
+  const linkedInUrl = "https://www.linkedin.com/in/heber-gc";
+
+  const [copied, setCopied] = useState(false);
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(email).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
+
+  return (
+    <div className="min-h-screen bg-teal-700 px-4 pt-24 pb-12">
+      <h2 className="text-6xl font-bold text-zinc-100 text-center mb-12">Contact</h2>
+
+      <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
+        {/* Email Card */}
+        <button
+          onClick={copyToClipboard}
+          className="flex flex-col items-center justify-center text-center p-8 rounded-lg shadow-lg hover:shadow-2xl transition bg-zinc-800 h-full"
+        >
+          <FaEnvelope className="text-amber-400 text-6xl mb-2" />
+          <h3 className="text-zinc-100 text-2xl font-semibold mb-2">{copied ? "Copied!" : "Copy my email"}</h3>
+        </button>
+
+        {/* LinkedIn Card */}
+        <a
+          href={linkedInUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col items-center justify-center text-center p-8 rounded-lg shadow-lg hover:shadow-2xl transition bg-zinc-800 h-full"
+        >
+          <FaLinkedin className="text-amber-400 text-6xl mb-2" />
+          <h3 className="text-zinc-100 text-2xl font-semibold mb-2">Send me a message</h3>
+        </a>
       </div>
-    );
-  }
-  
+    </div>
+  );
+}
