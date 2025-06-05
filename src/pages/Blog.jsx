@@ -1,3 +1,4 @@
+import FadeInSection from "../components/FadeInSection";
 import { Link as RouterLink } from "react-router-dom";
 
 export default function Blog() {
@@ -16,14 +17,16 @@ export default function Blog() {
       </nav>
 
       {/* Blog Landing Content */}
-      <div className="flex flex-col items-center justify-center py-24 px-6">
-        <h1 className="text-6xl font-bold text-center mb-8">Blog (Coming Soon)</h1>
-        <p className="text-lg text-zinc-900 text-center max-w-lg">
-          This is a placeholder for my blog. I’m building out content and will
-          have posts here soon! In the meantime, click the logo above to return
-          to the main page.
-        </p>
-      </div>
+      <FadeInSection>
+        <div className="flex flex-col items-center justify-center py-24 px-6">
+            <h1 className="text-6xl font-bold text-center mb-8">Blog (Coming Soon)</h1>
+            <p className="text-lg text-zinc-900 text-center max-w-lg">
+            This is a placeholder for my blog. I’m building out content and will
+            have posts here soon! In the meantime, click the logo above to return
+            to the main page.
+            </p>
+        </div>
+      </FadeInSection>
     </div>
   );
 }
