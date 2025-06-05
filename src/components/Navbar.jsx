@@ -11,7 +11,7 @@ export default function Navbar() {
       offset: 0,
       duration: 500,
       className:
-        "block px-4 py-2 text-teal-300 hover:text-amber-200 transition cursor-pointer",
+        "block px-1 py-2 text-teal-300 hover:text-amber-200 transition transform hover:scale-110 cursor-pointer",
       activeClass: "text-amber-200",
       onClick: () => setMobileOpen(false), // close mobile menu when a link is clicked
     };
@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="flex justify-between max-w-6xl mx-auto">
           {/* Logo */}
           <span
-            className="font-bold text-xl text-amber-300 cursor-pointer"
+            className="font-bold text-xl text-amber-300 hover:text-amber-200 transition cursor-pointer"
             onClick={() => {
               scroll.scrollToTop({ duration: 500 });
               setMobileOpen(false);
@@ -31,7 +31,7 @@ export default function Navbar() {
           </span>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-6 flex items-center">
+          <div className="hidden md:flex space-x-7 flex items-center">
             {/* Home: scroll to top */}
             <span
               className="text-teal-300 hover:text-amber-200 transition transform hover:scale-110 cursor-pointer"
@@ -39,6 +39,7 @@ export default function Navbar() {
             >
               Home
             </span>
+
             {/* Other sections */}
            {[
             { to: "about", label: "About" },
@@ -84,22 +85,22 @@ export default function Navbar() {
                 scroll.scrollToTop({ duration: 500 });
                 setMobileOpen(false);
               }}
-              className="text-teal-300 hover:text-amber-200 transition cursor-pointer"
+              className="text-zinc-100 hover:text-amber-300 transition transform hover:scale-110 cursor-pointer"
             >
               Home
             </span>
-            <Link key="about" {...linkProps} to="about" className="text-zinc-100">
+            <Link key="about" {...linkProps} to="about" className="text-zinc-100 hover:text-amber-300 transition transform hover:scale-110 cursor-pointer">
               About
             </Link>
-            <Link key="projects" {...linkProps} to="projects" className="text-zinc-100">
+            <Link key="projects" {...linkProps} to="projects" className="text-zinc-100 hover:text-amber-300 transition transform hover:scale-110 cursor-pointer">
               Projects
             </Link>
-            <Link key="contact" {...linkProps} to="contact" className="text-zinc-100">
+            <Link key="contact" {...linkProps} to="contact" className="text-zinc-100 hover:text-amber-300 transition transform hover:scale-110 cursor-pointer">
               Contact
             </Link>
             <a
               href="/blog"
-              className="text-zinc-100 hover:text-amber-200 transition"
+              className="text-zinc-100 hover:text-amber-300 transition transform hover:scale-110 cursor-pointer"
               onClick={() => setMobileOpen(false)}
             >
               Blog
