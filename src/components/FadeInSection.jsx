@@ -25,9 +25,9 @@ export default function FadeInSection({ children }) {
     <div
       ref={domRef}
       className={`
-        opacity-0 translate-y-5
+        opacity-0
         transition-all duration-1000 
-        ${isVisible ? "opacity-100 translate-y-0" : ""}`}
+        ${isVisible ? "opacity-100" : ""}`}
     >
       {children}
     </div>
