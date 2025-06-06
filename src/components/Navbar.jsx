@@ -42,8 +42,8 @@ export default function Navbar() {
 
             {/* Other sections */}
            {[
-            { to: "about", label: "About" },
             { to: "projects", label: "Projects" },
+            { to: "about", label: "About" },
             { to: "contact", label: "Contact" },
            ].map(({ to, label }) => (
             <Link key={to} {...linkProps} to={to}>
@@ -89,11 +89,11 @@ export default function Navbar() {
             >
               Home
             </span>
-            <Link key="about" {...linkProps} to="about" className="text-zinc-100 hover:text-amber-300 transition transform hover:scale-110 cursor-pointer">
-              About
-            </Link>
             <Link key="projects" {...linkProps} to="projects" className="text-zinc-100 hover:text-amber-300 transition transform hover:scale-110 cursor-pointer">
               Projects
+            </Link>
+            <Link key="about" {...linkProps} to="about" className="text-zinc-100 hover:text-amber-300 transition transform hover:scale-110 cursor-pointer">
+              About
             </Link>
             <Link key="contact" {...linkProps} to="contact" className="text-zinc-100 hover:text-amber-300 transition transform hover:scale-110 cursor-pointer">
               Contact
