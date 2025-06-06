@@ -2,7 +2,7 @@ export default function Hero() {
     return (
       <div className="min-h-screen flex flex-col justify-center items-center bg-zinc-800 text-white p-6">
         
-        <h1 className="opacity-0 animate-fade-in text-5xl sm:text-6xl font-bold mb-8 text-center">
+        <h1 className="opacity-0 animate-fade-in  text-5xl sm:text-6xl font-bold mb-8 text-center">
           Hi, I’m Heber
         </h1>
         <p className="opacity-0 animate-fade-in-slow text-xl sm:text-xl text-zinc-100 max-w-xl text-center mb-6">
