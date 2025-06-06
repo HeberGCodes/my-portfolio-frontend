@@ -21,9 +21,9 @@ export default function Projects() {
   ];;
 
     return (
-      <div className="min-h-screen bg-zinc-200 text-gray-900 px-4 pt-20 pb-12">
+      <div className="min-h-screen bg-zinc-200 text-gray-900 px-4 p-8">
         <FadeInSection>
-          <h1 className="text-6xl font-bold text-center mb-8">Projects</h1>
+          <h1 className="text-6xl font-bold text-center mb-10">Projects</h1>
         </FadeInSection>
         <div className="grid gap-8 max-w-4xl mx-auto md:grid-cols-2">
           {projects.map(({ title, description, url }) => (
