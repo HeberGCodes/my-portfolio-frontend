@@ -18,11 +18,11 @@ export default function Blog() {
         {/* Blog Landing Content */}
         <div className="flex flex-col items-center justify-center py-24 px-6">
             <h1 className="opacity-0 animate-fade-in text-6xl font-bold text-center mb-8">
-                Blog (Coming Soon)
+                Blog Coming Soon!
             </h1>
 
             <p className="opacity-0 animate-fade-in-slow text-lg text-zinc-900 text-center max-w-lg">
-                This is a placeholder for my blog. I'm building out content and will
+                I'm building out content and will
                 have posts here soon! In the meantime, click the logo above to return
                 to the main page.
             </p>

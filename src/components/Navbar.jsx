@@ -11,7 +11,7 @@ export default function Navbar() {
       offset: 0,
       duration: 500,
       className:
-        "block px-1 py-2 text-teal-300 hover:text-amber-200 transition transform hover:scale-110 cursor-pointer",
+        "px-1 text-teal-300 hover:text-amber-200 transition transform hover:scale-110 cursor-pointer",
       activeClass: "text-amber-200",
       onClick: () => setMobileOpen(false), // close mobile menu when a link is clicked
     };
