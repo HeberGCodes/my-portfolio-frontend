@@ -28,7 +28,7 @@ export default function Contact() {
             onClick={copyToClipboard}
             className="flex flex-col items-center justify-center text-center p-8 rounded-lg shadow-lg hover:shadow-2xl transition bg-zinc-800 h-full"
           >
-            <FaEnvelope className="text-amber-400 text-6xl mb-2" />
+            <FaEnvelope className="text-amber-300 hover:text-amber-200 text-6xl mb-2" />
             <h3 className="text-zinc-100 text-2xl mb-2">{copied ? "Copied!" : "Copy email"}</h3>
           </button>
 
@@ -39,7 +39,7 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="flex flex-col items-center justify-center text-center p-8 rounded-lg shadow-lg hover:shadow-2xl transition bg-zinc-800 h-full"
           >
-            <FaLinkedin className="text-amber-400 text-6xl mb-2" />
+            <FaLinkedin className="text-amber-300 hover:text-amber-200 text-6xl mb-2" />
             <h3 className="text-zinc-100 text-2xl mb-2">Send message</h3>
           </a>
         </div>
