@@ -8,7 +8,7 @@ export default function Navbar() {
     const linkProps = {
       spy: true,
       smooth: true,
-      offset: 0,
+      offset: -60,
       duration: 500,
       className:
         "px-1 text-teal-300 hover:text-amber-200 transition transform hover:scale-110 cursor-pointer",
