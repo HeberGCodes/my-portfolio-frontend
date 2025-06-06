@@ -16,9 +16,9 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-teal-700 px-4 pt-24 pb-12">
+    <div className="min-h-screen bg-teal-700 px-4 pt-20 pb-12">
       <FadeInSection>
-        <h1 className="text-6xl font-bold text-zinc-100 text-center mb-12">Contact</h1>
+        <h1 className="text-6xl font-bold text-zinc-100 text-center mb-8">Contact</h1>
       </FadeInSection>
       
       <FadeInSection>

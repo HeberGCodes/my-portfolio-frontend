@@ -2,7 +2,7 @@ import FadeInSection from "../components/FadeInSection";
 
 export default function About() {
     return (
-      <div className="min-h-screen flex flex-col items-center bg-amber-300 text-zinc-900 p-6 pt-24 pb-12">
+      <div className="min-h-screen flex flex-col items-center bg-amber-300 text-zinc-900 p-6 pt-20 pb-12">
         <FadeInSection>
           <h1 className="text-6xl font-bold text-center mb-8">About Me</h1>
         </FadeInSection>
