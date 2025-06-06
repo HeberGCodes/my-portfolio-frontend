@@ -1,19 +1,49 @@
+import FadeInSection from "../components/FadeInSection";
+
 export default function Projects() {
+
+  const projects = [
+    {
+      title: "Multi-Tenant Expense Tracker",
+      description: "Full-featured Django app for managing personal and business expenses with multi-user support.",
+      url: "https://github.com/HeberGCodes/multi-tenant-expense-tracker"
+    },
+    {
+      title: "Business Email Assistant",
+      description: "AI-powered assistant to summarize and respond to business emails using Django and OpenAI API.",
+      url: "https://github.com/HeberGCodes/business-email-assistant"
+    },
+    {
+      title: "Portfolio Website",
+      description: "This portfolio website built with React, Tailwind CSS, and Vercel to showcase my projects and skills.",
+      url: "https://github.com/HeberGCodes/my-portfolio-frontend"
+    },
+  ];;
+
     return (
-      <div className="min-h-screen bg-white text-gray-900 px-4 py-16">
-        <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
-        <div className="grid gap-8 max-w-5xl mx-auto md:grid-cols-2">
-          {/* Replace these static examples later with dynamic content */}
-          <div className="p-6 rounded-lg shadow-lg border">
-            <h3 className="text-2xl font-semibold mb-2">Business Email Assistant</h3>
-            <p className="text-gray-700">AI-powered assistant to summarize and respond to business emails using Django and OpenAI API.</p>
-          </div>
-          <div className="p-6 rounded-lg shadow-lg border">
-            <h3 className="text-2xl font-semibold mb-2">Multi-Tenant Expense Tracker</h3>
-            <p className="text-gray-700">Full-featured Django app for managing personal and business expenses with multi-user support.</p>
-          </div>
-        </div>
+      <div className="min-h-screen bg-zinc-200 text-gray-900 px-4 p-8">
+        <FadeInSection>
+          <h1 className="text-6xl font-bold text-center mb-10">Projects</h1>
+        </FadeInSection>
+        <div className="grid gap-8 max-w-4xl mx-auto md:grid-cols-2">
+          {projects.map(({ title, description, url }) => (
+            <FadeInSection key={title}>  
+              <a
+                key={title}                   // unique key
+                href={url}                    // link to GitHub
+                target="_blank"               // open in new tab
+                rel="noopener noreferrer"     // security best practice
+                className="block"             // make the <a> fill its container
+              >
+                <div className="p-6 rounded-lg shadow-lg border hover:shadow-2xl transition bg-zinc-100 h-full">
+                  <h3 className="text-2xl font-semibold mb-2">{title}</h3>
+                  <p className="text-zinc-900">{description}</p>
+                </div>
+              </a>
+            </FadeInSection>
+        ))}
       </div>
+    </div>
     );
   }
   
